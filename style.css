@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(https://images.unsplash.com/photo-1617957772002-57adde1156fa?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxleHBsb3JlLWZlZWR8Mnx8fGVufDB8fHx8fA%3D%3D) no-repeat center center;
+    background-size: cover;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 420px;
+    background: rgba(255, 255, 255, 0.2); /* Fondo más blanco y opaco */
+    border: 2px solid rgba(255, 255, 255, 0.4); /* Borde más destacado */
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 24px;
+    color: #fff; /* Color del título */
+}
+
+.input-box {
+    position: relative;
+    width: 100%;
+    margin: 20px 0; /* Espacio reducido entre campos */
+}
+
+.input-box input {
+    width: 100%;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.3); /* Fondo más visible */
+    border: 2px solid rgba(255, 255, 255, 0.8); /* Bordes más claros */
+    border-radius: 40px;
+    font-size: 16px;
+    color: #222; /* Texto más oscuro */
+    padding: 0 50px 0 50px; /* Espacio a la izquierda para el icono */
+    outline: none;
+    transition: 0.3s;
+}
+
+.input-box input:focus {
+    border: 2px solid #ff4081; /* Bordes rosas al foco */
+}
+
+.input-box input::placeholder {
+    color: rgba(255, 255, 255, 0.9); /* Color del placeholder más claro */
+}
+
+.input-box i {
+    position: absolute;
+    left: 20px; /* Posición del icono */
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 22px; /* Aumentar tamaño del icono */
+    color: #ff4081; /* Color del icono rosa */
+    transition: 0.3s;
+}
+
+.input-box input:focus + i {
+    color: #ff4081; /* Cambio de color del icono al foco */
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -10px 0 20px; /* Espacio ajustado */
+}
+
+.remember-forgot label {
+    display: flex;
+    align-items: center;
+}
+
+.remember-forgot label input {
+    accent-color: #ff4081; /* Color del checkbox */
+    margin-right: 5px;
+}
+
+.remember-forgot a {
+    color: #ff4081; /* Enlaces en rosa */
+    text-decoration: none;
+}
+
+.remember-forgot a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    width: 100%;
+    height: 45px;
+    background: #ff4081; /* Color del botón más brillante */
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    font-size: 16px;
+    color: #fff; /* Texto blanco para el botón */
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #e91e63; /* Color del botón más oscuro al hacer hover */
+}
+
+.social-login {
+    margin: 20px 0; /* Espacio entre botones sociales */
+}
+
+.social-login button {
+    width: 100%;
+    padding: 12px;
+    margin: 5px 0;
+    background-color: #4267B2; /* Color de Facebook */
+    border: none;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-size: 16px; /* Aumentar tamaño del texto */
+}
+
+.social-login button:hover {
+    background-color: #365899; /* Color de botón de Facebook en hover */
+}
+
+.register-link {
+    font-size: 14.5px;
+    margin-top: 20px;
+}
+
+.register-link p a {
+    color: #ff4081; /* Enlace de registro en rosa */
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.register-link p a:hover {
+    text-decoration: underline;
+}
